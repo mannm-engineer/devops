@@ -27,7 +27,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 # Step 6: Install Calico as the cluster's network plugin
 # Applies the Calico manifest to set up Calico, a container networking solution, for the Kubernetes cluster.
-kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/master/manifests/calico.yaml
+kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/release-v3.28/manifests/calico.yaml
 
 # Step 7: Install NGINX Ingress Controller
 # Applies the NGINX Ingress Controller manifest to enable ingress capabilities for the Kubernetes cluster.
